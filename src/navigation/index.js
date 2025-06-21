@@ -7,6 +7,7 @@ import SignIn from '../screens/SignIn';
 import SignUp from '../screens/SignUp';
 import Calendar from '../screens/Calendar';
 import Map from '../screens/Map';
+import Profile from '../screens/Profile';
 import NewViolation from '../screens/NewViolation';
 
 const Stack = createNativeStackNavigator();
@@ -18,6 +19,7 @@ function AppTabs() {
             <Tab.Screen name="Calendar" component={Calendar} />
             <Tab.Screen name="Map" component={Map} />
             <Tab.Screen name="NewViolation" component={NewViolation} options={{ title: 'New Violation' }} />
+            <Tab.Screen name="Profile" component={Profile} />
         </Tab.Navigator>
     );
 }
